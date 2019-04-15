@@ -16,9 +16,9 @@ import (
 )
 
 import (
-	dt "github.com/golang-migrate/migrate/v4/database/testing"
-	"github.com/golang-migrate/migrate/v4/dktesting"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
+	dt "github.com/ChargePoint/migrate/database/testing"
+	"github.com/ChargePoint/migrate/dktesting"
+	_ "github.com/ChargePoint/migrate/source/file"
 )
 
 const defaultPort = 3306

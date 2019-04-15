@@ -106,8 +106,8 @@ __[Go Documentation](https://godoc.org/github.com/golang-migrate/migrate)__
 ```go
 import (
     "github.com/golang-migrate/migrate/v4"
-    _ "github.com/golang-migrate/migrate/v4/database/postgres"
-    _ "github.com/golang-migrate/migrate/v4/source/github"
+    _ "github.com/ChargePoint/migrate/database/postgres"
+    _ "github.com/ChargePoint/migrate/source/github"
 )
 
 func main() {
@@ -125,8 +125,8 @@ import (
     "database/sql"
     _ "github.com/lib/pq"
     "github.com/golang-migrate/migrate/v4"
-    "github.com/golang-migrate/migrate/v4/database/postgres"
-    _ "github.com/golang-migrate/migrate/v4/source/file"
+    "github.com/ChargePoint/migrate/database/postgres"
+    _ "github.com/ChargePoint/migrate/source/file"
 )
 
 func main() {

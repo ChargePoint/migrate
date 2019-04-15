@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
+	"github.com/ChargePoint/migrate/database"
 	"github.com/hashicorp/go-multierror"
 )
 
