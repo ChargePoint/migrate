@@ -1,7 +1,62 @@
-.DS_Store
-cli/build
-cli/cli
-cli/migrate
-.coverage
-.godoc.pid
+# A triplicate which stops adding extensionless files (for binaries)
+# note, README, MAKEFILE, etc extensionless files will be affected. Get Modern & use MD, etc.
+*
+!/**/
+!*.*
+!Dockerfile
+
+*.exe
+
+.DS_Store 
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+# Stop checking-in compiled code
+*.exe
+*.test
+*.prof
+*utilities/mfgmonthreport/*.csv
+utilities/mfgmonthreport/dealerreport
+dataserver/dataserver
+.vscode/launch.json
+.vscode/settings.json
+utilities/test.go
+mock/
+protobuf/
+apps/ocpi/local.ini
+local.ini
+
+.idea
+
 vendor/
+
+*.log
+
+# Dockerized environment generated files
+.env
+00-create-db.sql
+base_constant.ini-expanded
+golang-startup-unixified.sh
+chargepointnetwork.net.crt
+chargepointnetwork.net.key
+docker-compose.override.yml
+.go
